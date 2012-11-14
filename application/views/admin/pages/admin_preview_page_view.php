@@ -1,0 +1,1 @@
+<?php print_r($page_obj); ?>

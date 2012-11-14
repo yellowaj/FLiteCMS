@@ -1,0 +1,299 @@
+/* =============================================================================
+   Admin section styles
+
+   @author Adam Jacox
+   @credits HTML5Boilerplate, Twitter Bootstrap
+   ========================================================================== */
+
+
+/* =============================================================================
+   Resets
+   ========================================================================== */   
+
+li { list-style: none; list-style-image: none; } 
+
+ul, ol { margin: 0; padding: 0; }
+
+
+
+/* =============================================================================
+   Generic use styles
+   ========================================================================== */
+
+/* clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }   
+
+textarea { resize: vertical; }
+
+.button { cursor: pointer; }   
+
+.text-shadow { text-shadow: 0px 1px 0px #ffffff; }
+
+.shadow { -webkit-box-shadow: 0 1px 5px -1px #AFAFAF; box-shadow: 0 1px 5px -1px #AFAFAF; }
+
+.sprite { background: url(../../img/admin/sprites.png) no-repeat; }
+
+.error { color: red; font-size: 13px; }
+  .box-bg .error { margin: 15px 0 15px 25px; }
+
+.message {  background-color: #6185A4; color: #FFFFFF; font-size: 14px; left: 42%; padding: 14px; position: fixed; text-align: center; top: 40px; width: 225px; display: none; -webkit-box-shadow: 0 1px 3px 0 #9E9E9E; -moz-box-shadow: 0 1px 3px 0 #9E9E9E; box-shadow: 0 1px 3px 0 #9E9E9E; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }  /* flash message styles */  
+
+/* generic padding */
+.pad10 { padding: 10px; } /* padding */
+.pad20 { padding: 20px; } 
+.pad30 { padding: 30px; } 
+.lpad10 { padding-left: 10px; } /* left padding */
+.lpad20 { padding-left: 20px; } 
+.lpad30 { padding-left: 30px; } 
+.rpad10 { padding-right: 10px; } /* right padding */
+.rpad20 { padding-right: 20px; } 
+.rpad30 { padding-right: 30px; } 
+.tpad10 { padding-top: 10px; } /* top padding */
+.tpad20 { padding-top: 20px; } 
+.tpad30 { padding-top: 30px; } 
+.bpad10 { padding-bottom: 10px; } /* bottom padding */
+.bpad20 { padding-bottom: 20px; } 
+.bpad30 { padding-bottom: 30px; } 
+
+/* generic margin */
+.mar10 { margin: 10px; } /* margin */
+.mar20 { margin: 20px; } 
+.mar30 { margin: 30px; } 
+.lmar10 { margin-left: 10px; } /* left margin */
+.lmar20 { margin-left: 20px; } 
+.lmar30 { margin-left: 30px; } 
+.rmar10 { margin-right: 10px; } /* right margin */
+.rmar20 { margin-right: 20px; } 
+.rmar30 { margin-right: 30px; } 
+.tmar10 { margin-top: 10px; } /* top margin */
+.tmar20 { margin-top: 20px; } 
+.tmar30 { margin-top: 30px; } 
+.bmar10 { margin-bottom: 10px; } /* bottom margin */
+.bmar20 { margin-bottom: 20px; } 
+.bmar30 { margin-bottom: 30px; } 
+
+.no-pad { padding: 0; } /* remove padding */
+.no-mar { margin: 0; } /* remove margin */
+
+
+
+
+
+
+
+
+
+/* =============================================================================
+    main styles
+   ========================================================================== */
+
+body { background: url(../../img/admin/main-bg.jpg); padding-top: 50px; } /* body bg and add padding for nav */
+
+h1 { font-size: 24px; color: #aaaaaa; }
+.title-small { font-size: 18px; color: #333333; }
+  .title-small a { text-decoration: none; color: #333333; }
+  .title-small a:hover { color: #555555; }
+
+
+/* navbar styles - gradient, bottom shadow */
+.navbar-inverse .navbar-inner { background-image: -webkit-linear-gradient(center top , #313131, #111111);
+                                background-image: -moz-linear-gradient(center top , #313131, #111111);
+                                background-image: -o-linear-gradient(center top , #313131, #111111);
+                                background-image: -ms-linear-gradient(center top , #313131, #111111);
+                                background-image: linear-gradient(center top , #313131, #111111); 
+                                -webkit-box-shadow: 0 0 4px 0 #333333; box-shadow: 0 0 4px 0 #333333; }    
+
+.navbar .btn-small { margin-top: 8px; } /* position settings/logout btns in navbar */
+
+#pages-dropdown.dropdown-menu:after { content: none; }  /* remove content pointer from menu dropdown */
+
+.rt-col { width: 575px; } /* width of right column - form and menu pages */
+
+/* sortable menu/form items */
+.menu-box, .form-box { cursor: move; background-color: #E1E1E1; border: 1px solid #D9D9D9; font-size: 14px; margin: 5px auto 0 auto; padding: 15px; width: 90%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+footer { margin: 50px 0; }
+footer p { margin: 0 auto; text-align: center; color: #909090; font-size: 11px; } 
+
+
+/* =============================================================================
+   page specific styles
+   ========================================================================== */
+
+.box-header { background-color: #193441; padding: 10px 20px; }
+  .box-header h3 { font-size: 13px; color: #ffffff; line-height: 0; display: inline; margin-left: 7px; }
+  .box-header .btn {  margin: -5px -15px 0 0; }
+
+.box-bg { background-color: #fefefe; width: 100%; margin: 0 auto; }
+
+
+/* 
+ * login page styles
+ */
+
+#login-box { width: 380px; margin: 0 auto; }
+
+
+/* 
+ * dashboard page styles
+ */
+
+.quick-links { margin: 10px; } /* position quick links ul - dashboard page */
+  .quick-links li { text-align: left; }
+  .quick-links i { margin-left: 25px; }
+
+#ga-container a { margin: 10px; } /* position ga grant access btn - dashboard page */  
+
+.inside-form { margin: 0 auto; } /* position the forms inside of .box-bg */
+
+.box-bg .span8 { margin-top: 15px; } /* add top margin to 1st form inside .box-bg */
+
+#quick-stats { margin-top: 25px; }
+
+.stat-box { padding: 25px 40px; }
+
+#ga-container { width: 700px; height: 300px; } /* analytics */
+
+.ga-loading { margin: 110px 300px; position: absolute; }
+
+
+/* 
+ * pages styles
+ */
+
+#sample-url { max-width: 328px; font-size: 13px; } /* url box for sample url - create new page */
+
+.page-submit-box { margin: 15px 22px 0 0; padding: 10px; width: 15%; }
+
+.page-btns li { margin: 4px 0; } /* page action btns - create/edit page */
+
+.delete-field { margin: 20px; }
+
+.page-type-box { margin: 0 20px; }
+
+#custom-fields { margin: 20px; }
+
+.page-type { width: 278px; } /* style the page type well at top of create/edit page */
+
+
+/* contact form items */
+
+#type-contact { margin: 10px 0 0 0; }
+  #type-contact .well { padding: 0; }
+
+.contact-legend { width: 900px; margin-left: 20px; }  
+
+.form-content { margin-top: 10px; }  
+
+#cur-form-items { width: 575px; } /* width of right column in contact form items */
+
+#add-form-btn { margin: 15px 0; }
+
+.lt-header { background-color: #FFFFFF; margin: 0; }
+  .lt-header h3 { color: #41697D; font-size: 14px; margin: 0; padding: 5px 15px; }
+
+.darker-box-bg { background-color: #E4E4E4; padding: 10px 0 10px 20px; margin-left: -20px; }
+
+#add-email-receiver {}  /* add email recipient btn */
+
+.form-box-btn { margin-right: 5px; } /* position the 'details' btn on created form items */
+
+/* dropdown/radio/checkbox options */
+.input-options { background-color: #F6F6F6; border: 1px solid #D6D6D6; padding: 10px 25px 15px 16px; width: 212px; margin: 10px 0; }
+  .input-options label { font-size: 14px; }
+  .input-options input, .receive-email-input { margin: 3px 0; display: block; }
+
+#no-form-items { font-size: 11px; color: #9e9e9e; }  /* style default message when no items are created */  
+
+.form-box-settings { display: none; color: #666666; border-bottom: 1px solid #DFDFDF; border-right: 1px solid #DFDFDF; border-left: 1px solid #DFDFDF; border-radius: 0 0 3px 3px; margin: -1px auto 0 auto; padding: 10px 25px; width: 85%; }
+
+
+/* testimonials */
+
+#testimonials-box { background-color: #FFFFFF; border: 1px solid #DFDFDF; margin-top: 25px; padding: 10px; }
+  #testimonials-box h3 { font-size: 16px; font-weight: normal; color: #333333; margin: 5px 10px; }
+  #testimonials-box blockquote { color: #777777; font-size: 14px; margin: 0 15px 15px; padding: 5px 15px; }
+    #testimonials-box blockquote p { width: 95%; }
+    #testimonials-box blockquote:hover { background-color: #ececec; }
+  #testimonials-box .author { color: #ACACAC; font-size: 12px; margin-left: 10px; }
+
+
+/* 
+ * menu manager styles
+ */
+
+.menu-box-settings { display: none; color: #666666; font-size: 13px; border-bottom: 1px solid #DFDFDF; border-right: 1px solid #DFDFDF; border-left: 1px solid #DFDFDF; border-radius: 0 0 3px 3px; margin: -1px auto 0 auto; padding: 10px 25px; width: 85%; } 
+
+#add-menu-btn { margin: 15px 0; }
+
+#save-menu-btn { margin: -38px 10px; }
+
+.menu-box-btn { margin-right: 5px; } /* position the 'details' btn on created menu items */
+
+#no-menu-items { margin: 10px 20px; font-size: 11px; color: #9e9e9e; }
+
+
+/* 
+ * settings page styles
+ */
+
+.settings-box { background-color: #EFEFEF; border: 1px solid #DFDFDF; margin: 10px 20px 10px 40px; padding: 25px; }
+
+.settings-btns { margin: 10px 20px 25px 0; }
+
+
+/* 
+ * users/pages/quotes table styles
+ */
+
+.field-type { font-size: 11px; margin: 10px 30px; padding-bottom: 5px; } 
+  .field-type li { float: left; }
+
+.table-layout { margin: 25px auto 15px auto; width: 95%; }
+  .table-layout thead { background-color: #bebebe; font-size: 14px; text-shadow: 0px 1px 0px #E3E3E3; filter: dropshadow(color=#E3E3E3, offx=0, offy=1);}
+  .table-layout tr { height: 45px; }
+    .table-layout tbody tr { width: 95%; }
+    .row-bg { background-color: #f5f5f5; }
+  .table-layout th { text-align: left; padding: 5px; }
+    .table-layout th a { color: #333333; }
+  .table-layout td { font-size: 12px; vertical-align: middle; padding: 5px; }
+    .user-checkbox, .quote-checkbox, .horse-checkbox { text-align: center; }
+
+#check-all-ul { margin: 25px 0 20px 34px; padding-bottom: 20px; font-size: 12px; border-top: 1px solid silver; padding-top: 20px; width: 93%; }
+  #check-all-ul li { float: left; margin-right: 10px; }  
+  #check-all-ul select { margin: -5px 0 0 15px; }  
+
+
+/* 
+ * edit users page
+ */
+
+#change-pswd-btn { margin: 8px 0; } 
+
+.edit-user-actions { margin-top: 17px; }
+
+
+/* 
+ * media page styles
+ */
+
+#file-manager { background-color: #E0DFDE; border: 1px solid silver; height: 600px; padding: 9px; width: 920px; }
+
+
+/* 
+ * horse listing styles
+ */
+ 
+.horse-thumbs img { background-color: #FFFFFF; border: 1px solid silver; box-shadow: 1px 1px 3px -1px #9F9F9F; -webkit-box-shadow: 1px 1px 3px -1px #9F9F9F; margin: 6px; max-height: 80px; max-width: 100px; padding: 3px; cursor: pointer; }
+
+.thumb-box { position: relative; }
+
+.thumb-delete { position: absolute; cursor: pointer; left: 0; top: -30px; }
+
+.horse-thumbs img.thumb-highlight { background-color: #3299CC; }
+
+.img-guidelines { color: #909090; font-size: 11px; }
+
+.file-box input[type="file"] { height: 24px; }

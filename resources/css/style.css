@@ -1,0 +1,284 @@
+/* =============================================================================
+   Admin section styles
+
+   @author Adam Jacox
+   @credits HTML5Boilerplate, Twitter Bootstrap
+   ========================================================================== */
+
+
+/* =============================================================================
+   Resets
+   ========================================================================== */   
+
+li { list-style: none; list-style-image: none; } 
+
+ul, ol { margin: 0; padding: 0; }
+
+nav a:hover { text-decoration: none; }
+
+
+
+
+/* =============================================================================
+   General use styles
+   ========================================================================== */
+
+/* clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }   
+
+/* Image replacement */
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+  .ir:before { content: ""; display: block; width: 0; height: 100%; }
+
+
+textarea { resize: vertical; }
+
+.button { cursor: pointer; }   
+
+.text-shadow { text-shadow: 0px 1px 0px #ffffff; }
+
+.shadow { -webkit-box-shadow: 0 1px 5px -1px #AFAFAF; box-shadow: 0 1px 5px -1px #AFAFAF; }
+
+.error { color: red; font-size: 13px; }
+  .box-bg .error { margin: 15px 0 15px 25px; }
+
+.message {  background-color: #6185A4; color: #FFFFFF; font-size: 14px; left: 42%; padding: 14px; position: fixed; text-align: center; top: 40px; width: 225px; display: none; -webkit-box-shadow: 0 1px 3px 0 #9E9E9E; -moz-box-shadow: 0 1px 3px 0 #9E9E9E; box-shadow: 0 1px 3px 0 #9E9E9E; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }  /* flash message styles */
+
+.sprite { background: url(../img/front/sprite.png) no-repeat; }  
+.sprite-home { background: url(../img/front/sprite-home.png) no-repeat; }    
+
+.heading { font-size: 25px; text-align: center; }
+.heading-left { font-size: 25px; margin-top: -17px; margin-left: 20px; }
+
+a { color: #353535; }
+
+/* generic padding */
+.pad10 { padding: 10px; } /* padding */
+.pad20 { padding: 20px; } 
+.pad30 { padding: 30px; } 
+.lpad10 { padding-left: 10px; } /* left padding */
+.lpad20 { padding-left: 20px; } 
+.lpad30 { padding-left: 30px; } 
+.rpad10 { padding-right: 10px; } /* right padding */
+.rpad20 { padding-right: 20px; } 
+.rpad30 { padding-right: 30px; } 
+.tpad10 { padding-top: 10px; } /* top padding */
+.tpad20 { padding-top: 20px; } 
+.tpad30 { padding-top: 30px; } 
+.bpad10 { padding-bottom: 10px; } /* bottom padding */
+.bpad20 { padding-bottom: 20px; } 
+.bpad30 { padding-bottom: 30px; } 
+
+/* generic margin */
+.mar10 { margin: 10px; } /* margin */
+.mar20 { margin: 20px; } 
+.mar30 { margin: 30px; } 
+.lmar10 { margin-left: 10px; } /* left margin */
+.lmar20 { margin-left: 20px; } 
+.lmar30 { margin-left: 30px; } 
+.rmar10 { margin-right: 10px; } /* right margin */
+.rmar20 { margin-right: 20px; } 
+.rmar30 { margin-right: 30px; } 
+.tmar10 { margin-top: 10px; } /* top margin */
+.tmar20 { margin-top: 20px; } 
+.tmar30 { margin-top: 30px; } 
+.bmar10 { margin-bottom: 10px; } /* bottom margin */
+.bmar20 { margin-bottom: 20px; } 
+.bmar30 { margin-bottom: 30px; } 
+
+.no-pad { padding: 0; } /* remove padding */
+.no-mar { margin: 0; } /* remove margin */
+
+
+
+
+
+/* =============================================================================
+    general main styles
+   ========================================================================== */
+
+body { background: #aba49b url(../img/front/main-bg.jpg) no-repeat center top; font-family: 'Georgia', serif; color: #353535; } 
+
+.container { position: relative; }
+
+.main { background: url(../img/front/container-bg.jpg); margin: -75px 0 90px 0; padding: 70px 15px 0 15px; -webkit-box-shadow: 0px 5px 18px 1px #353535, inset 0 0 30px -3px #454545; box-shadow: 0px 5px 18px 1px #353535, inset 0 0 30px -3px #454545; -webkit-border-radius: 5px; border-radius: 5px; }
+
+
+/*
+ * header/menu styles
+ */
+
+header nav { margin: 0 auto; height: 150px; width: 1315px; position: relative; }
+
+.nav-top { background: url(../img/front/menu-belt.png) no-repeat center; height: 150px; width: 1315px; position: absolute; z-index: 500; }
+
+.header-info { position: absolute; text-align: right; line-height: 18px; top: -145px; right: 5px; font-size: 12px; }
+
+.menu-top { position: relative; }
+  .menu-top li { float: left; font-size: 16px; font-weight: bold; color: #382e33; cursor: pointer; }
+  .menu-top li:hover { text-decoration: none; }
+
+#buckle-link { margin: 25px 0 0 25px; width: 165px; height: 100px; }
+
+#breeding { margin: 62px 0 0 209px; width: 118px; height: 18px; background-position: -268px -8px; }
+  #breeding:hover { background-position: -268px -30px; }
+
+#horses-for-sale { margin: 62px 0 0 30px; width: 195px; height: 18px; background-position: -392px -7px; }
+  #horses-for-sale:hover { background-position: -392px -29px; }
+
+#cattle { margin: 66px 0 0 20px; width: 92px; height: 18px; background-position: -596px -7px; }
+  #cattle:hover { background-position: -596px -29px; }
+
+#about { margin: 67px 0 0 30px; width: 80px; height: 18px; background-position: -694px -7px; }
+  #about:hover { background-position: -694px -29px; }
+
+#contact { margin: 68px 0 0 30px; width: 105px; height: 18px; background-position: -786px -7px; }
+  #contact:hover { background-position: -786px -29px; } 
+
+
+/*
+ * footer styles
+ */
+
+.nav-pills > li > a:hover { background-color: #aba39b; color: #212121; }
+
+footer { height: 105px; margin-top: 15px; }
+  footer ul { font-size: 13px; margin-top: 20px; }
+  footer ul li { float: left; margin-right: 10px; font-family: 'Gravitas One', 'Georgia', serif; }
+  footer ul li a:hover { background-color: none; color: #5d5d5d; text-decoration: none; }
+
+
+#harness { width: 75px; height: 185px; background-position: 0 0; position: absolute; }
+
+#contact-patch { width: 185px; height: 105px; background-position: -74px -5px; position: relative; cursor: pointer; }
+  #contact-patch p { font-family: 'Gravitas One', 'Georgia', serif; color: #121212; font-size: 11px; left: 27px; line-height: 15px; position: absolute; top: 38px; }
+
+.copyright { text-align: right; font-size: 11px; line-height: 18px; margin: 20px 35px; }  
+
+
+/* =============================================================================
+   index page styles
+   ========================================================================== */
+
+
+/*
+ * slider styles
+ */
+
+#slider { background: url(../img/front/slider/slider-bg.png) no-repeat center; width: 990px; height: 450px; margin-left: -41px; margin-top: -35px; position: absolute; }
+
+#main-slider.carousel { margin: -19px 0 25px -23px; width: 955px; }
+  .carousel img { width: 955px; height: 410px; }
+
+#main-slider .carousel-controls { width: 45px; height: 45px; left: -20px; line-height: 30px; margin-top: -20px; position: absolute; top: 45%; cursor: pointer; }
+  #main-slider .carousel-controls.right { left: auto; right: -20px; }
+
+#main-slider .slider-left { background-position: -269px -63px; }
+    #main-slider .slider-left:hover { background-position: -269px -109px; }
+
+#main-slider .slider-right { background-position: -312px -63px; }
+    #main-slider .slider-right:hover { background-position: -312px -109px; }  
+
+/*
+ * box styles
+ */
+
+.home-info { text-align: center; width: 95%; margin-left: 25px; } 
+  .home-info p { font-size: 11px; }
+
+.home-boxes { cursor: pointer; }
+  .home-boxes p { font-size: 11px; width: 115px; line-height: 17px; margin-top: 74px; } 
+
+#horses-box { width: 260px; height: 165px; background-position: -5px 0; } 
+  #horses-box p { margin-left: 138px; }
+
+#cattle-box { width: 305px; height: 165px; background-position: -271px -5px; } 
+  #cattle-box p { margin-left: 200px; }
+
+#ranch-box { width: 290px; height: 165px; background-position: -587px -5px; } 
+  #ranch-box p { margin-left: 172px; }
+
+
+
+/* =============================================================================
+   horse listings page styles
+   ========================================================================== */  
+
+/*
+ * all listings page
+ */   
+
+.listings .alert { margin: 50px; }   
+
+.listing-row .span4 { width: 250px; }
+.listing-row .well { border-bottom: 1px solid #D6D1CA; border-right: 1px solid #D6D1CA; border-top: none; border-left: none; background-color: #aba49b; -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.05); box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.05); }
+
+.listing-img img { width: 240px; height: 150px; -webkit-box-shadow: 0px 2px 7px -1px #3A3939; box-shadow: 0px 2px 7px -1px #3A3939; border: 5px solid #E5E3D3; } 
+
+/*
+ * single listing page
+ */  
+
+/* slider */
+#listing-slider { -webkit-box-shadow: 0px 3px 7px -1px #3A3939; box-shadow: 0px 3px 7px -1px #3A3939; border: 5px solid #E5E3D3; }
+  #listing-slider .carousel { margin-bottom: 0; }
+    #listing-slider .carousel img { width: 660px; height: 380px; }
+
+#listing-slider .carousel-controls { width: 45px; height: 45px; left: -20px; line-height: 30px; margin-top: -20px; position: absolute; top: 45%; cursor: pointer; }
+  #listing-slider .carousel-controls.right { left: auto; right: -20px; }
+
+#listing-slider .slider-left { background-position: -267px -63px; }
+    #listing-slider .slider-left:hover { background-position: -267px -109px; }
+
+#listing-slider .slider-right { background-position: -314px -63px; }
+    #listing-slider .slider-right:hover { background-position: -314px -109px; }  
+
+.listing-stats { background: url(../img/front/listing-info-bg.jpg) no-repeat; width: 195px; height: 380px; -webkit-box-shadow: 0px 3px 7px -1px #3A3939; box-shadow: 0px 3px 7px -1px #3A3939; border: 5px solid #E5E3D3; margin-left: 6px; }
+  .listing-stats ul { margin: 80px 15px 15px 15px; }
+  .listing-stats li { margin-bottom: 40px; font-size: 20px; color: #111; text-shadow: 1px 1px 1px #6D6D6D; }
+
+.span8.wider { width: 660px; margin-left: 30px; } 
+
+.nickname { font-size: 18px; } 
+
+.video { margin: 5px auto; width: 640px; height: 480px; }
+
+.description { margin-bottom: 25px; }
+  .description p { margin-left: 20px; }
+
+.row legend { margin-left: 20px; border-bottom: 1px solid #959595; }
+
+/*
+ * listing form
+ */
+
+.listing-form { background-color: #e5e3d3; width: 890px; margin: 15px 0 15px 25px; padding: 5px; -webkit-box-shadow: 0px 3px 7px -1px #3A3939; box-shadow: 0px 3px 7px -1px #3A3939; font-family: 'Gravitas One', 'Georgia', serif; }
+  .listing-form form { margin-top: 15px; }
+
+.form-heading { background-color: #ACA59C; width: 94%; padding: 20px; margin: 5px auto; -webkit-box-shadow: 0px 3px 7px -2px #3A3939; box-shadow: 0px 3px 7px -2px #3A3939;  }
+
+.listing-form .control-label { width: 120px; }
+.listing-form .controls { margin-left: 140px; }
+
+.listing-form .alert { font-family: serif; font-weight: bold; width: 90%; margin-left: 30px; }
+
+.listing-form input[type="text"], .listing-form textarea { width: 270px; background-color: #d0cac3; border: 1px solid #999999; border-radius: 0; padding: 8px; }
+
+#listing-submit { background: url(../img/front/submit-btn.jpg) no-repeat; width: 367px; height: 80px; border: none; margin: -3px 0 0 110px; text-indent: -9999px; }
+  #listing-submit:hover { background-position: 0 -80px; }
+
+
+/* =============================================================================
+   contact page styles
+   ========================================================================== */ 
+
+.contact-form { padding: 45px 0 25px 60px; margin-right: 40px; }   
+  .contact-form.well { border-bottom: 1px solid #D6D1CA; border-right: 1px solid #D6D1CA; border-top: none; border-left: none; background-color: #e5e3d3; -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3); box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3); }
+
+.contact-form input[type="text"], .contact-form textarea { background-color: #d0cac3; width: 450px; border: 1px solid #999999; border-radius: 0; padding: 8px; }  
+
+.contact-form input[type="submit"] { background: url(../img/front/submit-btn.jpg) no-repeat; width: 367px; height: 80px; border: none; text-indent: -9999px; margin-top: 10px; }
+  .contact-form input[type="submit"]:hover { background-position: 0 -80px; }
+

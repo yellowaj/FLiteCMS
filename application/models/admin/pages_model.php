@@ -594,9 +594,9 @@ class Pages_model extends CI_Model {
 		$i = 1;
 		foreach($form_arr as $form) {
 			$values_arr = explode(',', $form);
-			$new_arr[] = array('title' => $values_arr[0], 'input_type' => $values_arr[1], 'name' => $values_arr[2], 'page_id' => $page_id, 'order' => $i);
-			if(isset($values_arr[3])) {
-				$new_arr[($i-1)]['values'] = $values_arr[3];
+			$new_arr[] = array('title' => $values_arr[0], 'input_type' => $values_arr[1], 'name' => $values_arr[2], 'required' => ((int)$values_arr[3] === 1) ? 1 : 0, 'page_id' => $page_id, 'order' => $i);
+			if(isset($values_arr[4])) {
+				$new_arr[($i-1)]['values'] = $values_arr[4];
 			} else {
 				$new_arr[($i-1)]['values'] = '';
 			}

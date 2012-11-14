@@ -147,6 +147,10 @@
                 <?php echo form_label('Internal Name <i class="info icon-question-sign" rel="tooltip" title="Used internally to get and set variables"></i>', 'internal-name'); ?>
                 <?php echo form_input(array('name' => 'internal_name', 'id' => 'internal-name', 'value' => set_value('internal_name'), 'maxlength' => 255, 'size' => 24)); ?>
 
+                <label class="checkbox">Required <i class="info icon-question-sign" rel="tooltip" title="Check if field is required"></i>
+                  <?php echo form_checkbox(array('name' => 'required', 'id' => 'item-required', 'value' => 1)); ?>
+                </label>
+
               </div> <!-- end .darker-box-bg -->  
 
               <div class="btn btn-small" id="add-form-btn">add form item</div> 

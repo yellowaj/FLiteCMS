@@ -400,7 +400,7 @@ $('#add-form-btn').on('click', function() {
 	var titleVal = $('#input-title').val(),
 		typeVal = $('#input-type').val(),
 		nameVal = $('#internal-name').val(),
-		activeVal = ($('#item-required').val() == 1) ? 1 : 0;
+		activeVal = ($('#item-required').is(':checked')) ? 1 : 0;
 
 	// check title and name are set
 	if((titleVal != '' && titleVal.length > 0) && (nameVal != '' && nameVal.length > 0)) {
@@ -427,7 +427,8 @@ $('#add-form-btn').on('click', function() {
 
 		// prep form_item
 		var valBool = false,
-			form_item = $.trim(titleVal)+','+$.trim(typeVal)+','+$.trim(newNameVal)+','+$.trim(activeVal),
+			form_item_arr = [$.trim(titleVal), $.trim(typeVal), $.trim(newNameVal), activeVal];
+			form_item = form_item_arr.join(',');
 			typeInputs = $('.type-inputs');
 
 		if(typeInputs.val()) {
@@ -459,7 +460,7 @@ $('#add-form-btn').on('click', function() {
 						((valBool) ? '<label>values</label><input type="text" value="' + item_arr.join('|') +'" size="22" />' : ''),
 						'<label for="setting-internal-name">internal name</label>',
 						'<input type="text" name="setting_internal_name" value="' + newNameVal +'" id="setting-internal" maxlength="255" size="22"  />',
-						(activeVal == 1) ? '<p>required</p>' : '',
+						(activeVal == 1) ? '<p><strong>required</strong></p>' : '',
 						'<input type="hidden" name="form_item[]" value="'+ form_item +'" />',
 					'</div>',
 				'</li>'

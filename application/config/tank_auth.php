@@ -7,8 +7,8 @@
 | These details are used in emails sent by authentication library.
 |--------------------------------------------------------------------------
 */
-$config['website_name'] = 'Your project';
-$config['webmaster_email'] = 'yellowjacox@gmail.com';
+$config['website_name'] = '';
+$config['webmaster_email'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -127,8 +127,8 @@ $config['captcha_case_sensitive'] = TRUE;
 |--------------------------------------------------------------------------
 */
 $config['use_recaptcha'] = TRUE;
-$config['recaptcha_public_key'] = '6LflzdQSAAAAAHBRCmbVEAbkxGRdGkPHBdxp3AUE';
-$config['recaptcha_private_key'] = '6LflzdQSAAAAABLlmyRrg9PnMUcnoW-STTfoBx5k ';
+$config['recaptcha_public_key'] = '';
+$config['recaptcha_private_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
